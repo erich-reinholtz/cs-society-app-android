@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EventDisplayActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            app:cardBackgroundColor="?attr/cardBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:id="@+id/Name_textView"
+                    style="@style/Title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/Event_image"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        tools:srcCompat="@tools:sample/avatars"/>
+
+                    <TextView
+                        android:id="@+id/Date_textView"
+                        style="@style/Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/Event_image"
+                        android:layout_toRightOf="@+id/Event_image"
+                        android:layout_marginTop="48dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp" />
+
+                    <TextView
+                        android:id="@+id/Time_textView"
+                        style="@style/Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/Event_image"
+                        android:layout_toRightOf="@+id/Event_image"
+                        android:layout_below="@+id/Date_textView"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"/>
+
+                    <TextView
+                        android:id="@+id/Event_duration"
+                        style="@style/Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/Event_image"
+                        android:layout_toRightOf="@+id/Event_image"
+                        android:layout_below="@id/Time_textView"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"/>
+
+                    <TextView
+                        android:id="@+id/Location_textView"
+                        style="@style/Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/Event_image"
+                        android:layout_toRightOf="@+id/Event_image"
+                        android:layout_below="@id/Event_duration"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    style="@style/Title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/EventDisplay_textView_Description"/>
+
+                <TextView
+                    android:id="@+id/Description_textView"
+                    style="@style/Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    style="@style/Title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/EventDisplay_textView_Tags"/>
+
+                <TextView
+                    android:id="@+id/Tags_textView"
+                    style="@style/Body1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/Going_textView"
+                        style="@style/Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/EventDisplay_textView_Going"/>
+
+                    <TextView
+                        android:id="@+id/UsersNumber_textView"
+                        style="@style/Body1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@+id/Going_textView"
+                        android:layout_toRightOf="@+id/Going_textView"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_centerVertical="true"/>
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/Mark_button"
+                        style="@style/Button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:onClick="markFunction"
+                        android:text="@string/EventDisplay_button_Mark"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <EditText
+            android:id="@+id/Comment_editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:background="@layout/rounded_border_edittext"
+            android:ems="10"
+            android:inputType="textCapSentences"
+            android:gravity="top|start"
+            android:lines="8"
+            android:maxLines="10"
+            android:minLines="6"
+            android:textColor="#000000"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Comment_button"
+            style="@style/Button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:onClick="commentFunction"
+            android:text="@string/EventDisplay_button_Comment"/>
+
+        <ListView
+            android:id="@+id/comments_ListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Edit_button"
+                style="@style/Button"
+                android:layout_width="220dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:text="@string/EventDisplay_button_Edit"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Delete_button"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/Edit_button"
+                android:layout_toRightOf="@+id/Edit_button"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:text="@string/EventDisplay_button_Delete"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

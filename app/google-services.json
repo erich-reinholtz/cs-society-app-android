@@ -1,0 +1,35 @@
+{
+  "project_info": {
+    "project_number": "258124327541",
+    "firebase_url": "https://cssappdb.firebaseio.com",
+    "project_id": "cssappdb",
+    "storage_bucket": "cssappdb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:258124327541:android:6756d846d74dfeaf",
+        "android_client_info": {
+          "package_name": "com.cssapp.cssapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN3NKwgFJNg8oTmXeW68WOJICc_CExKU8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "258124327541-iqnum82sf0hulfv532p1hnho641u90am.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

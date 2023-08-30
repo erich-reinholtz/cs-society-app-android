@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".EditEventActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="?attr/cardBackground"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/editEventTextView"
+                style="@style/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/editEventTextView"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/Event_imageView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    tools:srcCompat="@tools:sample/avatars" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/picture_button"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/Event_imageView"
+                    android:layout_toRightOf="@+id/Event_imageView"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_centerVertical="true"
+                    android:onClick="showPictureDialog"
+                    android:text="@string/EditEvent_button_Image"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Name_TextLayout"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Name_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapSentences"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Date_textLayout"
+                    style="@style/TextInputLayout"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Date_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:focusable="false"
+                        android:enabled="false"
+                        android:inputType="date" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Date_button"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@+id/Date_textLayout"
+                    android:layout_toRightOf="@+id/Date_textLayout"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:onClick="showDatePickerDialog"
+                    android:text="@string/EditEvent_button_Date"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/Time_textLayout"
+                    style="@style/TextInputLayout"
+                    android:layout_width="156dp"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/Time_editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:inputType="time"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/Time_button"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toEndOf="@+id/Time_textLayout"
+                    android:layout_toRightOf="@+id/Time_textLayout"
+                    android:onClick="startTime"
+                    android:text="@string/EditEvent_button_Time" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Duration_textLayout"
+                style="@style/TextInputLayout"
+                android:layout_width="156dp"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Duration_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:enabled="false"
+                    android:inputType="number"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/End_button"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toEndOf="@+id/Duration_textLayout"
+                    android:layout_toRightOf="@+id/Duration_textLayout"
+                    android:onClick="endTime"
+                    android:text="@string/EditEvent_button_Time" />
+
+        </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/Location_textLayout"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/Location_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textCapSentences"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/Tags_textView"
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/EditEvent_button_Tags"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/Sports_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Sports"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Coding_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CP_checkBox_Coding"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Drinks_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Drinks"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Food_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CP_checkBox_Food"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:layout_row="1"
+                    android:layout_column="0" />
+
+                <CheckBox
+                    android:id="@+id/Games_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CP_checkBox_Games"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Movies_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CP_checkBox_Movies"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/CSS_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CreateEvent_checkbox_css"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:layout_row="2"
+                    android:layout_column="0" />
+
+                <CheckBox
+                    android:id="@+id/Planning_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/CreateEvent_checkbox_cssplannig"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+            </GridLayout>
+
+            <TextView
+                android:id="@+id/Description_textView"
+                style="@style/Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/EditEvent_textView_Description"/>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Description_editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textCapSentences"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Save_button"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:text="@string/EditEvent_button_Save"
+                app:fontFamily="@font/open_sans_light"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>

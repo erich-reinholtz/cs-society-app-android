@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        app:cardBackgroundColor="?attr/cardBackground"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+
+            <TextView
+                android:id="@+id/CreateProfile_textView"
+                style="@style/Title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/CP_textView_CreateProfile"
+                android:layout_gravity="center_horizontal"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/ProfilePicture_imageView"
+                    android:layout_width="98dp"
+                    android:layout_height="99dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:contentDescription="@string/CP_imageView_ProfilePicture" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/ChoosePicture_button"
+                    style="@style/Button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toEndOf="@id/ProfilePicture_imageView"
+                    android:layout_toRightOf="@id/ProfilePicture_imageView"
+                    android:layout_centerVertical="true"
+                    android:onClick="showPictureDialog"
+                    android:text="@string/CP_button_ChooseImage"/>
+
+            </RelativeLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/FirstName_textLayout"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+                
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/FirstName_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/CP_editText_FirstName"
+                    android:inputType="textCapSentences"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/LastName_textLayout"
+                style="@style/TextInputLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/LastName_editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="@string/CP_editText_LastName"
+                    android:inputType="textCapSentences"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Spinner
+                android:id="@+id/ChooseYear_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:entries="@array/academicYear_array"/>
+
+            <TextView
+                android:id="@+id/ChooseTags_textView"
+                style="@style/Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/CP_textView_ChooseTags"/>
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:id="@+id/Sports_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Sports"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Coding_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Coding"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Drinks_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Drinks"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Food_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Food"
+                    android:layout_row="1"
+                    android:layout_column="0"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Games_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Games"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+                <CheckBox
+                    android:id="@+id/Movies_checkBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingEnd="24dp"
+                    android:paddingRight="24dp"
+                    android:text="@string/CP_checkBox_Movies"
+                    android:textColor="?android:attr/textColorPrimary"/>
+
+            </GridLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/Create_button"
+                style="@style/Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:enabled="false"
+                android:text="@string/CP_button_Create"/>
+
+    </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</ScrollView>

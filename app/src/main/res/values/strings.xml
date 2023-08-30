@@ -1,0 +1,172 @@
+<resources>
+    <string name="app_name">CSSapp</string>
+
+    //Strings for LoginActivity
+    <string name="L_textView_Welcome">Welcome to the grandious CSSapp!</string>
+    <string name="L_textView_Enter">Please sign in with your University credentials.</string>
+    <string name="L_imageView_Logo">Logo</string>
+
+    //Strings for CreateProfileActivity
+    <string name="CP_textView_CreateProfile">Create your profile</string>
+    <string name="CP_editText_FirstName">First name</string>
+    <string name="CP_editText_LastName">Last name</string>
+    <string name="CP_editText_StartTime">Start time</string>
+    <string name="CP_editText_EndTime">End time</string>
+    <string-array name="academicYear_array">
+        <item>Choose academic year</item>
+        <item>Year 1</item>
+        <item>Year 2</item>
+        <item>Year 3</item>
+        <item>Year 4</item>
+        <item>Postgraduate</item>
+    </string-array>
+    <string name="CP_imageView_ProfilePicture">Profile Picture</string>
+    <string name="CP_button_ChooseImage">Choose profile picture</string>
+    <string name="CP_textView_ChooseTags">What are you interested in?</string>
+    <string name="CP_checkBox_Sports">Sports</string>
+    <string name="CP_checkBox_Food">Food</string>
+    <string name="CP_checkBox_Drinks">Drinks</string>
+    <string name="CP_checkBox_Games">Games</string>
+    <string name="CP_checkBox_Coding">Coding</string>
+    <string name="CP_checkBox_Social">Social</string>
+    <string name="CP_checkBox_Movies">Movies</string>
+    <string name="CP_button_Create">Create</string>
+
+    //Strings for HomePageActivity
+    <string name="Home_textView_Homepage">Homepage</string>
+    <string name="Home_textView_Profile">Profile</string>
+    <string name="homeTextView">Home</string>
+    <string name="newsFeedTextView">News feed</string>
+    <string name="menuBtn">Menu</string>
+    <string name="eventNameTextView">Event name</string>
+    <string name="userTextView">Created by: User name</string>
+    <string name="descriptionTextView">This is the description of the event so it is purposely long since there isn\'t any actual event I can really write about but I still need to fill in the space so in looks like a proper description. Maybe its not the best idea but hopefully it will work.</string>
+    <string name="filterBtn">Filter</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    //Strings for ProfileActivity
+    <string name="Profile_textView_Profile">Profile</string>
+    <string name="Profile_textView_FirstName">FirstName</string>
+    <string name="Profile_textView_LastName">LastName</string>
+    <string name="Profile_textView_CourseYear">CourseYear</string>
+    <string name="Profile_textView_Tags">List of tags
+    \n -
+    \n -
+    \n -</string>
+    <string name="Profile_textView_Events">Created events:</string>
+    <string name="Profile_textView_Example">EventExample</string>
+    <string name="Profile_imageView_Picture">Profile picture</string>
+    <string name="Profile_button_EditProfile">Edit Profile</string>
+    <string name="Profile_button_ChangePermissions">Change permissions</string>
+    <string name="Profile_textView_Interests">Interests:</string>
+
+    //Strings for EventsActivity
+
+    <string name="Events_textView_Events">Events</string>
+    <string name="Events_textView_MyEvents">My events</string>
+    <string name="Events_textView_Example">EventExample </string>
+    <string name="Events_textView_Marked">Marked events</string>
+    <string name="Events_textView_MarkedExamples">-
+    \n-
+    \n-</string>
+    <string name="Events_button_Create">Create new event</string>
+
+    //Strings for CreateEve
+
+    <string name="createEventTextView">Create Event</string>
+    <string name="enter_message">Enter Event Name</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_date">Set Date</string>
+    <string name="enter_time">Set Time</string>
+    <string name="enter_duration">Set Duration</string>
+    <string name="send_button">Submit</string>
+    <string name="set_button">Set</string>
+    <string name="createEvent_button">Create Event</string>
+    <string name="Show">Show</string>
+    <string name="tags_textview">Select tags:</string>
+    <string name="description_textview">Enter event description:</string>
+    <string name="pick_image_intent_text">a</string>
+    <string name="createEventChooseImage">Choose event picture</string>
+    <string name="CreateEvent_checkbox_css">CSS</string>
+    <string name="CreateEvent_checkbox_cssplannig">CSS Planning</string>
+
+    //Strings for EditProfileActivity
+    <string name="EditProfile_textView_Edit">Edit profile</string>
+    <string name="EditProfile_editText_FirstName">First Name</string>
+    <string name="EditProfile_editText_LastName">Last Name</string>
+    <string-array name="EditAcademicYear_array">
+        <item>Change academic year</item>
+        <item>Year 1</item>
+        <item>Year 2</item>
+        <item>Year 3</item>
+        <item>Year 4</item>
+        <item>Postgraduate</item>
+    </string-array>
+    <string name="EditProfile_imageView_ProfilePicture">Profile Picture</string>
+    <string name="EditProfile_button_ChooseImage">Change profile picture</string>
+    <string name="EditProfile_textView_ChooseTags">Change the things you are interested in:</string>
+    <string name="EditProfile_checkBox_Sports">Sports</string>
+    <string name="EditProfile_checkBox_Food">Food</string>
+    <string name="EditProfile_checkBox_Drinks">Drinks</string>
+    <string name="EditProfile_checkBox_Games">Games</string>
+    <string name="EditProfile_checkBox_Coding">Coding</string>
+    <string name="EditProfile_checkBox_Social">Social</string>
+    <string name="EditProfile_checkBox_Movies">Movies</string>
+    <string name="EditProfile_button_Save">Save</string>
+
+    //Strings for WikiActivity
+    <string name="Wiki_textView_Warning">Work in progress!</string>
+
+    //Strings for EventDisplayActivity
+    <string name="EventDisplay_textView_Name">Event name</string>
+    <string name="EventDisplay_textView_Date">Date</string>
+    <string name="EventDisplay_textView_Time">Time</string>
+    <string name="EventDisplay_textView_Location">Location</string>
+    <string name="EventDisplay_textView_Tags">Tags:</string>
+    <string name="EventDisplay_textView_Description">Details:</string>
+    <string name="EventDisplay_textView_Going">Users going:</string>
+    <string name="EventDisplay_button_Comment">Comment</string>
+    <string name="EventDisplay_button_Edit">Edit</string>
+    <string name="EventDisplay_button_Mark">Mark</string>
+    <string name="EventDisplay_button_Delete">Delete</string>
+
+    //Strings for EditEventActivity
+    <string name="editEventTextView">Edit Event</string>
+    <string name="EditEvent_button_Save">Save</string>
+    <string name="EditEvent_button_Image">Change event picture</string>
+    <string name="EditEvent_editText_Name">Change event name</string>
+    <string name="EditEvent_editText_Date">Change date</string>
+    <string name="EditEvent_editText_Time">Change time</string>
+    <string name="EditEvent_editText_Location">Change location</string>
+    <string name="EditEvent_button_Date">Change</string>
+    <string name="EditEvent_button_Time">Change</string>
+    <string name="EditEvent_button_Tags">Change tags:</string>
+    <string name="EditEvent_textView_Description">Change event description:</string>
+
+    //strings for MenuActivity
+    <string name="menuTextView">Menu</string>
+    <string name="homeBtn">Home</string>
+    <string name="myProfileBtn">My Profile</string>
+    <string name="eventsBtn">Events</string>
+    <string name="calendarBtn">Calendar</string>
+    <string name="wikiBtn">Wiki</string>
+    <string name="membersBtn">Members</string>
+    <string name="settingsBtn">Settings</string>
+
+    //strings for SettingsActivity
+    <string name="settingsTextView">Settings</string>
+    <string name="darkThemeSwitch">Dark Theme</string>
+    <string name="profilePrivateSwitch">Make Profile Private</string>
+    <string name="deleteProfileBtn">Delete Profile</string>
+    <string name="logOutBtn">Log Out</string>
+
+    //strings for MembersActivity
+    <string name="membersTextView">Members</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search for events</string>
+
+
+</resources>

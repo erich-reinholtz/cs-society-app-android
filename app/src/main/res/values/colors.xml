@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--Light mode colours-->
+    <color name="colorPrimary">#607d8b</color>
+    <color name="colorPrimaryDark">#263238</color>
+    <color name="colorAccent">#455A64</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="toolbarIconColor">@color/textColorPrimary</color>
+    <color name="windowBackground">#FCFCFC</color>
+    <color name="cardBackground">#ffffff</color>
+    <color name="colorControlActivated">@color/colorAccent</color>
+    <color name="mtrl_textinput_default_box_stroke_color" tools:override="true">#607d8b</color>
+
+    <!--Dark mode colours-->
+    <color name="darkColorPrimary">#2c4867</color>
+    <color name="darkColorPrimaryDark">#2c4867</color>
+    <color name="darkColorAccent">#2c4867</color>
+    <color name="darkTextColorPrimary">#FFFFFF</color>
+    <color name="darkToolbarIconColor">@color/darkTextColorPrimary</color>
+    <color name="darkWindowBackground">#0f1c2d</color>
+    <color name="darkCardBackground">#0f1c2d</color>
+    <color name="darkColorControlActivated">@color/darkColorAccent</color>
+</resources>

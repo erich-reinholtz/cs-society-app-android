@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_home"
+        android:title="@string/homeBtn"/>
+
+    <item
+        android:id="@+id/item_profile"
+        android:title="@string/myProfileBtn"/>
+
+    <item
+        android:id="@+id/item_events"
+        android:title="@string/eventsBtn"/>
+
+    <item
+        android:id="@+id/item_calendar"
+        android:title="@string/calendarBtn"/>
+
+    <item
+        android:id="@+id/item_wiki"
+        android:title="@string/wikiBtn"/>
+
+    <item
+        android:id="@+id/item_members"
+        android:title="@string/membersBtn"/>
+
+    <item
+        android:id="@+id/item_settings"
+        android:title="@string/settingsBtn"/>
+
+</menu>
